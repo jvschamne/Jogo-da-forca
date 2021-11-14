@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jogo da Forca</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <section>
+        
+        <div class="intro">
+            <h1>Jogo da Forca</h1>  
+            <button class="botao-start" onclick="comecaJogo()">Vamos jogar!</button>
+            
+            <form>
+                <select id="tema">
+                    <option selected disabled value="">Tema</option>
+                    <option class="opcao">Animais</option>
+                    <option class="opcao">Frutas</option>
+                    <option class="opcao">Países</option>
+                    <option class="opcao">Profissões</option>
+                    <option class="opcao">Heróis</option>
+                </select>
+            
+            </form>
+            
+        </div>
+
+        <div class="partida desaparece">
+            <div class="tentativas">
+                <h2>Tentativas</h2>
+                <p class="tentativ">6</p>    
+            </div>   
+            
+            <div class="gameOver desaparece">
+                <h2>Fim de Jogo!</h2>
+            </div>
+
+            <div class="forca"> 
+                <img src="assets forca/forca.jpg" class="img-forca">
+            </div>
+            
+            <div class="escondida">
+            </div>
+
+             <div class="palavra">
+                <!--   <img src="assets forca/linha-removebg-preview.png" class="imagem"> -->
+            </div>
+        
+            <div class="letras">
+                <button class="botao">A</button>
+                <button class="botao">B</button>
+                <button class="botao">C</button>
+                <button class="botao">D</button>
+                <button class="botao">E</button>
+                <button class="botao">F</button>
+                <button class="botao">G</button>
+                <button class="botao">H</button>
+                <button class="botao">I</button>
+                <button class="botao">J</button>
+                <button class="botao">K</button>
+                <button class="botao">L</button>
+                <button class="botao">M</button>
+                <br>
+                <button class="botao">N</button>
+                <button class="botao">O</button>
+                <button class="botao">P</button>
+                <button class="botao">Q</button>
+                <button class="botao">R</button>
+                <button class="botao">S</button>
+                <button class="botao">T</button>
+                <button class="botao">U</button>
+                <button class="botao">V</button>
+                <button class="botao">W</button>
+                <button class="botao">X</button>
+                <button class="botao">Y</button>
+                <button class="botao">Z</button>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <script src='app.js'></script>
+</body>
+</html>

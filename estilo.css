@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    background-color: rgb(230, 129, 129);
+    font-family: sans-serif;
+    position: relative;
+}
+
+.intro{
+    color: rgb(0, 0, 0);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro h1{
+    font-size: 50px;
+}
+
+.intro button{
+    width: 150px;
+    height: 50px;
+    background-color: dodgerblue;
+    border: none;
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+div.desaparece{
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.aparece{
+    opacity: 1;
+    pointer-events: all;
+}
+    
+.tentativas{ 
+    color: rgb(0, 0, 0);
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    left: 10rem;
+}
+
+.tentativas h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.tentativas p{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+}
+
+.palavra{
+    position: absolute;
+    top: 50%;
+    left: 448px;
+}
+.palavra img{
+    width:49px;
+    height:50px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+
+.forca img{
+    max-width:500px;
+    max-height:250px;
+    width: auto;
+    height: auto;  
+    position: absolute;
+    top: 10rem;
+    left: 7rem;
+}
+
+.letras{
+    position: absolute;
+    top: 27rem;
+    left: 5rem;
+
+}
+
+.letras button{
+    border: 5px;
+    padding: 20px;
+    font-size: 20px;
+    background-color:rgb(140, 74, 226);
+    margin: 2px;
+}
+
+.letras button:hover{
+    background: rgb(0, 255, 42);
+}
+
+.escondida{
+    font-size: 55px;
+    position: absolute;
+    top: 18rem;
+    left: 460px;
+}
+
+.letra{
+    opacity: 0;   
+}
+
+.mostraLetra{
+    opacity: 1;
+}
+
+.letras .clicado{
+    background-color: red;
+}
+
+#fim{
+    pointer-events: none;
+}
+
+.gameOver{
+    color: rgb(0, 0, 0);
+    height: 20vh;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 3rem;
+    left: 35rem;
+    font-size: 30px;
+    padding: 10px;
+    border: 4px solid rgb(0, 0, 0);
+    background: rgb(140, 74, 226);
+    text-align: center;
+    line-height: 100px;
+}
+
+.letra{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#tema{
+    padding: 10px;
+    background-color: seashell;
+    color: dodgerblue;
+    font-size: 1em;
+}
+
+button .desaparece{
+    pointer-events: none;
+    opacity: 0;
+}
